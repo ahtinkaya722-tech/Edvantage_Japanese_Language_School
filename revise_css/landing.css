@@ -8,6 +8,12 @@ body {
   color: #15202b;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 img,
 iframe,
 video {
@@ -205,31 +211,38 @@ video {
   margin: 0;
 }
 
+.section-container-3 {
+  width: 100%;
+}
+
 .location-section {
-
- 
-
+  width: 100%;
+  display: block;
   align-items: stretch;
 
 }
 
 .location-section > .container {
   width: 100%;
+  max-width: 100%;
   padding: 0;
 }
 
 
  .location-and-ph {
-    display: grid;
+  width: 100%;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: stretch;
+  margin: 0;
+  text-align: left;
 }
 
 
 .location-and-ph-title-Sanchaunge {
  
-     width: 600px;
+  width: 100%;
   background: #fff;
   border-radius: 12px;
   padding: 20px;
@@ -238,7 +251,7 @@ video {
   transition: 0.3s;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767.98px) {
   .location-and-ph {
     grid-template-columns: 1fr;
   }
@@ -426,6 +439,35 @@ video {
 }
 
 @media (max-width: 575.98px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .navbar,
+  .navbar .container-fluid,
+  main,
+  footer,
+  section,
+  .container,
+  .container-fluid,
+  .upper-section-1,
+  .upper-section-2,
+  .section-container,
+  .section-container-3,
+  .location-section,
+  .location-and-ph,
+  .location-and-ph-title-Sanchaunge,
+  .image-text,
+  .image-section,
+  .text-section,
+  .footer-container {
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .welcome,
   .reason_container,
   .location-part,
@@ -435,17 +477,89 @@ video {
   }
 
   .img-box {
-    height: 360px;
+    width: 100%;
+    height: min(360px, 92vw);
+  }
+
+  .img-box h3,
+  .img-box .intro-first-title-1 {
+    inset: auto 1rem 1.5rem 1rem;
+    max-width: calc(100% - 2rem);
+    font-size: clamp(1.8rem, 11vw, 2.8rem);
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .upper-section-2 p {
+    padding-inline: 0;
+  }
+
+  .section-container {
+    padding: 1rem 0;
   }
 
   .grid-template-1,
-  .testimonial-grid,
-  .image-section {
+  .testimonial-grid {
     grid-template-columns: 1fr;
   }
 
-  .Ac_image:nth-child(1) {
+  .location-section,
+  .location-and-ph {
+    width: 100%;
+  }
+
+  .location-and-ph {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-inline: 0;
+  }
+
+  .location-and-ph-title-Sanchaunge {
+    width: 100%;
+    padding: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .section-5 {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .image-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .image-section {
+    position: static;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .Ac_image,
+  .Ac_image:nth-child(1),
+  .Ac_image:nth-child(2),
+  .Ac_image:nth-child(3) {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
     grid-column: auto;
+  }
+
+  .Ac_image:nth-child(1) {
+    grid-row: span 2;
+  }
+
+  .Ac_image:nth-child(2),
+  .Ac_image:nth-child(3) {
+    aspect-ratio: 4 / 3;
   }
 
   .map-box,
