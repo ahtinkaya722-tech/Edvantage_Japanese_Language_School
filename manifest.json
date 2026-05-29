@@ -1,0 +1,20 @@
+{
+  "name": "EDVANTAGE Japanese School",
+  "short_name": "EDVANTAGE",
+  "start_url": "/home.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/image/Circle logo (2).png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/image/Circle logo (2).png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
