@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JLPT N5 to N1 Japanese language classes at EDVANTAGE Japanese Language School.">
+  <meta name="author" content="Daiki">
+  <link rel="icon" type="image/png" href="./image/Circle logo (2).png">
+  <script src="https://kit.fontawesome.com/d4f1966d21.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./revise_css/nav.css">
+  <link rel="stylesheet" href="./revise_css/landing.css">
+  <link rel="stylesheet" href="./revise_css/nlevel.css">
+  <title>JLPT N Level Classes | EDVANTAGE</title>
+</head>
+<body class="nlevel-page">
+  <div id="Nav-bar"></div>
+
+  <main>
+    <section class="nlevel-hero">
+      <div class="container nlevel-hero-grid">
+        <div class="nlevel-hero-copy">
+          <span class="section-eyebrow">JLPT Preparation</span>
+          <h1>Japanese Classes From N5 To N1</h1>
+          <p>
+            Study Japanese step by step with EDVANTAGE through structured lessons,
+            exam practice, speaking support, and online or on-campus learning.
+          </p>
+          <div class="nlevel-actions">
+            <a href="#class" class="btn btn-success">View Classes</a>
+            <a href="https://www.facebook.com/edvantagejapaneseschool" class="btn btn-outline-dark" target="_blank" rel="noopener">Facebook Page</a>
+          </div>
+        </div>
+
+        <div class="nlevel-hero-media">
+          <img src="./image/Double Campus Advantages 2026.png" alt="EDVANTAGE campus class information">
+        </div>
+      </div>
+    </section>
+
+    <section class="nlevel-intro">
+      <div class="container">
+        <div class="intro-panel">
+          <h2>What Is JLPT?</h2>
+          <p>
+            The Japanese-Language Proficiency Test is an international exam that measures
+            Japanese ability from beginner level N5 to advanced level N1. EDVANTAGE classes
+            help students build vocabulary, grammar, reading, listening, and test confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="nlevel-classes" id="class">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="section-eyebrow">Class Levels</span>
+          <h2 class="section-heading">Choose Your JLPT Level</h2>
+          <p class="section-subtitle">Start from the right level and move forward with a clear study path.</p>
+        </div>
+
+        <div class="level-grid">
+          <article class="level-card">
+            <span>N5</span>
+            <h3>Beginner Foundation</h3>
+            <p>Hiragana, Katakana, basic grammar, daily vocabulary, simple reading, and listening practice.</p>
+          </article>
+
+          <article class="level-card">
+            <span>N4</span>
+            <h3>Basic Communication</h3>
+            <p>Essential sentence patterns, conversation practice, reading short passages, and exam drills.</p>
+          </article>
+
+          <article class="level-card">
+            <span>N3</span>
+            <h3>Intermediate Japanese</h3>
+            <p>Stronger grammar, kanji growth, longer reading, listening strategies, and timed practice.</p>
+          </article>
+
+          <article class="level-card">
+            <span>N2</span>
+            <h3>Upper Intermediate</h3>
+            <p>Advanced grammar, natural expressions, speed reading, vocabulary building, and mock tests.</p>
+          </article>
+
+          <article class="level-card">
+            <span>N1</span>
+            <h3>Advanced Mastery</h3>
+            <p>Complex reading, advanced listening, formal expressions, exam strategy, and intensive revision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="nlevel-details">
+      <div class="container nlevel-detail-grid">
+        <div>
+          <span class="section-eyebrow">Learning Options</span>
+          <h2 class="section-heading">Online And On-Campus Support</h2>
+          <p>
+            EDVANTAGE supports students with organized lessons, regular practice, and campus options
+            for learners who want a classroom environment.
+          </p>
+        </div>
+
+        <div class="detail-list">
+          <div><i class="fa-solid fa-chalkboard-user"></i><span>Experienced Japanese language instructors</span></div>
+          <div><i class="fa-solid fa-book-open-reader"></i><span>JLPT-focused vocabulary, grammar, reading, and listening</span></div>
+          <div><i class="fa-solid fa-clipboard-check"></i><span>Practice tests and revision before exam season</span></div>
+          <div><i class="fa-solid fa-location-dot"></i><span>Sanchaung and Tamwe campus contact support</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    fetch("Nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("Nav-bar").innerHTML = data;
+      })
+      .catch(error => console.error("Nav Load Error " + error));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@media(max-width:576px) {
+    
+
+    .img-box{
+    position: relative;
+
+width: 100%;
+    height:300px;
+    background-image:url(../image/ChatGPT\ Image\ Dec\ 22\,\ 2025\,\ 12_01_40\ AM.png) ;
+   
+  
+    animation: slide-in-elliptic-top-fwd 1s ease-out forwards;
+
+}
+
+.img-box .intro-first-title-1{
+
+    font-size: 30px;
+  
+}
+
+
+.upper-section-2 h4{
+    font-family: myfont;
+    font-size: 17px;
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+
+
+.upper-section-2 p{
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+
+    padding:0px 5rem;
+
+
+}
+
+
+
+
+
+
+
+
+}
