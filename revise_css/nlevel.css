@@ -1,0 +1,194 @@
+.nlevel-page {
+  background: #f8fafc;
+  color: #15202b;
+}
+
+.nlevel-hero {
+  padding: clamp(3rem, 7vw, 6rem) 0 clamp(2rem, 5vw, 4rem);
+}
+
+.nlevel-hero-grid,
+.nlevel-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.9fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.nlevel-hero-copy h1 {
+  margin: 0.75rem 0 1rem;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 0.95;
+  font-weight: 900;
+  color: #102a43;
+}
+
+.nlevel-hero-copy p,
+.nlevel-details p,
+.intro-panel p {
+  max-width: 680px;
+  color: #526274;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.75;
+}
+
+.nlevel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.nlevel-actions .btn {
+  min-width: 150px;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.nlevel-hero-media {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 22px 55px rgba(21, 32, 43, 0.14);
+}
+
+.nlevel-hero-media img {
+  width: 100%;
+  display: block;
+}
+
+.nlevel-intro,
+.nlevel-classes,
+.nlevel-details {
+  padding: clamp(2.5rem, 6vw, 5rem) 0;
+}
+
+.intro-panel {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid rgba(21, 32, 43, 0.08);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  text-align: center;
+  box-shadow: 0 14px 35px rgba(21, 32, 43, 0.08);
+}
+
+.intro-panel h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+}
+
+.intro-panel p {
+  margin: 0 auto;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.level-card {
+  border: 1px solid rgba(21, 32, 43, 0.08);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 1.25rem;
+  min-height: 240px;
+  box-shadow: 0 14px 35px rgba(21, 32, 43, 0.08);
+}
+
+.level-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #e9f8ee;
+  color: #1f7a45;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.level-card h3 {
+  margin: 1rem 0 0.65rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #123c69;
+}
+
+.level-card p {
+  margin: 0;
+  color: #526274;
+  line-height: 1.65;
+}
+
+.detail-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.detail-list div {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 0.85rem;
+  align-items: center;
+  border: 1px solid rgba(21, 32, 43, 0.08);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 10px 28px rgba(21, 32, 43, 0.07);
+}
+
+.detail-list i {
+  color: #1f7a45;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .level-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nlevel-hero-grid,
+  .nlevel-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nlevel-hero-media {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .level-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nlevel-hero,
+  .nlevel-intro,
+  .nlevel-classes,
+  .nlevel-details {
+    padding-inline: 1rem;
+  }
+
+  .nlevel-actions .btn {
+    width: 100%;
+  }
+
+  .level-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .level-card {
+    min-height: auto;
+  }
+}
