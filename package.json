@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "edvantage-react",
   "private": true,
   "version": "0.0.0",
@@ -23,16 +22,4 @@
     "oxlint": "^1.71.0",
     "vite": "^8.1.1"
   }
-=======
-  "name": "real-project",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
->>>>>>> 85a400caa1692bcee5952959561028b64754b192
 }
