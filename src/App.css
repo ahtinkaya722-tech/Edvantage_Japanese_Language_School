@@ -1,0 +1,430 @@
+/* ===== Fonts ===== */
+@font-face {
+  font-family: "RiftSoft";
+  src: url("/font/Rift Soft Bold.otf");
+  font-weight: 600;
+}
+
+/* ===== Scroll Animations ===== */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.edv-fade-up {
+  animation: fade-up ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 5% cover 30%;
+}
+
+.edv-fade-left {
+  animation: fade-left ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 5% cover 30%;
+}
+
+.edv-fade-right {
+  animation: fade-right ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 5% cover 30%;
+}
+
+/* ===== Navbar ===== */
+.edv-navbar {
+  background: linear-gradient(135deg, #64a0e5 50%, #fff 30%, #25d33a);
+  padding: 0.8rem 1.2rem;
+}
+
+.edv-brand {
+  font-family: "RiftSoft", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  background: linear-gradient(0deg, #c3f412 20%, #28c83b, #159524);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.2px #ffffff;
+  letter-spacing: 1px;
+  transition: letter-spacing 0.3s ease;
+}
+
+.edv-brand:hover {
+  letter-spacing: 0.1rem;
+}
+
+.edv-nav-link {
+  font-family: "RiftSoft", sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff !important;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.edv-nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.edv-nav-link:hover::after {
+  width: 100%;
+}
+
+.edv-nav-link:hover {
+  opacity: 0.9;
+}
+
+.edv-nav-link.active {
+  font-weight: 700;
+}
+
+.edv-dropdown {
+  border-radius: 12px;
+}
+
+.edv-dropdown .dropdown-item:hover {
+  background: #eef7f2;
+  color: #123c69;
+  font-weight: 500;
+}
+
+/* ===== Eyebrow ===== */
+.edv-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #25d33a;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Welcome ===== */
+.edv-intro-title {
+  padding: 3rem 0 1rem;
+}
+
+.edv-intro-title h1 {
+  font-family: "RiftSoft", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "RiftSoft", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.edv-welcome {
+  padding: 3rem 0;
+}
+
+.edv-hero-box {
+  width: 100%;
+  height: 50vh;
+  background-image: url("/image/ChatGPT Image Dec 22, 2025, 12_01_40 AM.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.edv-welcome h4 {
+  font-family: "RiftSoft", sans-serif;
+  font-size: 2rem;
+}
+
+/* ===== Feature Cards (Why Choose Us) ===== */
+.edv-reason {
+  background: #f8fafc;
+}
+
+.edv-feature-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.edv-feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.edv-feature-card h4 {
+  font-family: "RiftSoft", sans-serif;
+  color: #159524;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== Location ===== */
+.edv-location {
+  background: #ffffff;
+}
+
+.edv-location-card {
+  background: #f0fdf4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.edv-location-card h5 {
+  font-family: "RiftSoft", sans-serif;
+  color: #159524;
+  margin-bottom: 1rem;
+}
+
+.edv-location-card h5 i {
+  margin-right: 0.5rem;
+}
+
+/* ===== Testimonials ===== */
+.edv-review {
+  background: #f8fafc;
+}
+
+.edv-testimonial-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  height: 100%;
+}
+
+.edv-stars {
+  color: #fbbf24;
+  margin-bottom: 0.75rem;
+}
+
+.edv-stars i {
+  margin-right: 2px;
+}
+
+.edv-testimonial-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== Activities ===== */
+.edv-activity {
+  background: #ffffff;
+}
+
+.edv-activity-gallery {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+}
+
+.edv-gallery-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.edv-gallery-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edv-activity-gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.edv-activity-item {
+  margin-bottom: 1.25rem;
+}
+
+.edv-activity-item h4 {
+  font-family: "RiftSoft", sans-serif;
+  color: #123c69;
+  font-size: 1.1rem;
+}
+
+/* ===== Footer ===== */
+.edv-footer {
+  background: #000000;
+  color: #e0e0e0;
+  padding: 3rem 0 1.5rem;
+}
+
+.edv-footer h4,
+.edv-footer h5 {
+  font-family: "RiftSoft", sans-serif;
+  color: #ffffff;
+}
+
+.edv-footer a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.edv-footer a:hover {
+  color: #25d33a;
+}
+
+.edv-footer ul li {
+  margin-bottom: 0.4rem;
+}
+
+.edv-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.edv-social a {
+  font-size: 1.4rem;
+}
+
+/* ===== N Level Page ===== */
+.edv-nlevel-hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfeff 100%);
+}
+
+.edv-nlevel-hero h1 {
+  font-family: "RiftSoft", sans-serif;
+  font-size: 2.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.edv-nlevel-intro {
+  background: #ffffff;
+}
+
+.edv-intro-panel {
+  background: #f0fdf4;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.edv-intro-panel h2 {
+  font-family: "RiftSoft", sans-serif;
+  color: #159524;
+}
+
+.edv-nlevel-classes {
+  background: #f8fafc;
+}
+
+.edv-level-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.edv-level-card:hover {
+  transform: translateY(-4px);
+}
+
+.edv-level-code {
+  display: inline-block;
+  font-family: "RiftSoft", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #25d33a;
+  margin-bottom: 0.5rem;
+}
+
+.edv-level-card h3 {
+  font-family: "RiftSoft", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.edv-nlevel-details {
+  background: #ffffff;
+}
+
+.edv-detail-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1.05rem;
+}
+
+.edv-detail-list li i {
+  color: #25d33a;
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .edv-brand {
+    font-size: 1.6rem;
+  }
+
+  .edv-nav-link {
+    font-size: 1rem;
+  }
+
+  .edv-hero-box {
+    height: 30vh;
+  }
+
+  .edv-hero-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .edv-nlevel-hero h1 {
+    font-size: 1.8rem;
+  }
+}
