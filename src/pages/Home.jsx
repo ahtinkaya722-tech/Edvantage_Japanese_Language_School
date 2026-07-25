@@ -157,7 +157,7 @@ export default function Home() {
                 </div>
                 <div className="edv-gallery-right">
                   <img src="/image/FC.jpg" alt="School activity" className="edv-fade-right" />
-                  <img src="/image/Thingyan Frame 2.jpg" alt="Thingyan Frame" className="edv-fade-right" />
+                  <img src="/image/Gomi Zero Day 2025 Oct.png" alt="Gomi Zero Day" className="edv-fade-right" />
                 </div>
               </div>
             </div>

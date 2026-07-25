@@ -3,6 +3,5 @@ import react from '@vitejs/plugin-react'
 
 
 export default defineConfig({
-  plugins: [react()],
-  base: "/Edvantage_Japanese_Language_School/"
+  plugins: [react()]
 })

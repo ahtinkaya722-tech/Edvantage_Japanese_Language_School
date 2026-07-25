@@ -39,22 +39,30 @@
   }
 }
 
-.edv-fade-up {
-  animation: fade-up ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 5% cover 30%;
-}
-
-.edv-fade-left {
-  animation: fade-left ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 5% cover 30%;
-}
-
+.edv-fade-up,
+.edv-fade-left,
 .edv-fade-right {
-  animation: fade-right ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 5% cover 30%;
+  opacity: 1;
+}
+
+@supports (animation-timeline: view()) {
+  .edv-fade-up {
+    animation: fade-up ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+  }
+
+  .edv-fade-left {
+    animation: fade-left ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+  }
+
+  .edv-fade-right {
+    animation: fade-right ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+  }
 }
 
 /* ===== Navbar ===== */
